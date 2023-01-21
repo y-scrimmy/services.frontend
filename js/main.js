@@ -15,7 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    submitBtn.addEventListener('click', function() {
+    submitBtn.addEventListener('click', function(event) {
+        event.preventDefault();
         container.style.display = 'none';
     });
 });
